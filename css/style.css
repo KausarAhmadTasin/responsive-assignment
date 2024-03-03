@@ -5,6 +5,19 @@
   padding: 0;
 }
 
+/* Shared style */
+.primary-btn {
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 34px;
+  outline: none;
+  border-style: none;
+}
+
 /* Nav style */
 nav {
   display: flex;
@@ -56,4 +69,80 @@ nav {
   &:hover {
     color: #ff5400;
   }
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  margin: 0 80px;
+  border-radius: 16px;
+}
+
+.hero-overlay img {
+  display: block;
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.hero-ovralay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-radius: 16px;
+  width: 99.6%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-title {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.hero-text {
+  width: 676px;
+  margin: 24px auto;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.hero-inputs {
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-inputs input {
+  border-radius: 8px;
+  background: #fff;
+  width: 174px;
+  height: 52px;
+  outline: none;
+  border-style: none;
+  padding-left: 7px;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
