@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -425,4 +426,44 @@ button .faa {
   font-family: Mulish;
   font-size: 24px;
   font-weight: 400;
+}
+
+/* Footer section styles */
+
+.footer-section {
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 80px;
+}
+.footer-logo {
+  margin: 0px 538px;
+  margin-top: 80px;
+  margin-bottom: 15px;
+}
+.footer-text {
+  color: #5a5a5d;
+  width: 769px;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.links {
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+.links .fi {
+  margin-right: 20px;
+}
+
+.rights {
+  color: #131318;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
 }
