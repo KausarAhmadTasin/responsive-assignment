@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav style */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 80px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 48px;
+  height: 56px;
+}
+.logo h1 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo-span {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.link-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 700;
+  gap: 44px;
+}
+
+.link-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-list li {
+  color: #131318;
+  &:hover {
+    color: #ff5400;
+  }
+}
