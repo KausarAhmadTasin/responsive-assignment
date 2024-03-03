@@ -350,3 +350,79 @@ button .faa {
   margin: 0 auto;
   margin-top: 24px;
 }
+
+/* News letter section style */
+.news-letter {
+  margin: 100px 80px;
+  display: flex;
+  gap: 24px;
+}
+.subscribe-form {
+  width: 474px;
+  height: 344px;
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid #ff5400;
+}
+.form-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+}
+.form-text {
+  color: #5a5a5d;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-family: Mulish;
+  font-size: 16px;
+  width: 350px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.subscribe-form input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  width: 393px;
+  height: 52px;
+  border-style: none;
+  margin-bottom: 24px;
+}
+
+.subscribe-form hr {
+  background: rgba(84, 84, 88, 0.1);
+  width: 393px;
+  margin-bottom: 24px;
+}
+
+.sub-btn {
+  width: 393px;
+}
+
+.disc-overlay {
+  border-radius: 16px;
+  background: #ff5400;
+  width: 290px;
+  height: 90px;
+  padding: 30px;
+  position: relative;
+  bottom: 206px;
+  left: 306px;
+  transform: rotate(-19.628deg);
+}
+
+.disc-title {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+.disc-text {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+}
