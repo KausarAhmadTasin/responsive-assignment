@@ -53,6 +53,10 @@ nav {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .logo img {
   width: 48px;
   height: 56px;
@@ -99,20 +103,22 @@ nav {
   border-radius: 16px;
 }
 
-.hero-overlay img {
+.hero-section img {
   display: block;
   border-radius: 16px;
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center center;
 }
 
-.hero-ovralay {
+.hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   text-align: center;
   border-radius: 16px;
-  width: 101%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(
     to bottom,
@@ -306,7 +312,6 @@ button .faa {
 .single-card {
   width: 520px;
   height: 284px;
-  flex-shrink: 0;
   border-radius: 16px;
   padding: 32px;
 }
@@ -387,6 +392,7 @@ button .faa {
   background: rgba(19, 19, 24, 0.05);
   width: 393px;
   height: 52px;
+  padding-left: 10px;
   border-style: none;
   margin-bottom: 24px;
 }
@@ -466,4 +472,182 @@ button .faa {
   font-family: Inter;
   font-size: 16px;
   font-weight: 300;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
+  .link-list {
+    display: none;
+  }
+  .logo img {
+    width: 28px;
+    height: 30px;
+  }
+  .logo h1,
+  .logo-span {
+    font-size: 26px;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  nav {
+    padding: 10px;
+    max-width: 98vw;
+    justify-content: space-between;
+  }
+
+  /* hero section */
+  .hero-section {
+    margin: 10px;
+  }
+  .hero-inputs {
+    display: block;
+  }
+  .hero-text {
+    width: 304px;
+  }
+  .hero-title {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  .hero-section img {
+    width: 100%;
+    object-position: center;
+    margin-top: 10px;
+    height: 100vh;
+  }
+  .hero-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .hero-inputs input {
+    width: 100%;
+  }
+  .hero-inputs button {
+    width: 100%;
+  }
+  .hero-inputs .fa {
+    position: relative;
+    left: 130px;
+    bottom: 35px;
+  }
+
+  /* Popular section */
+  .popular {
+    display: block;
+    gap: 10px;
+    margin: 20px;
+    margin-top: 30px;
+  }
+  .popular-content {
+    width: 100%;
+  }
+  .popular-title {
+    font-size: 30px;
+  }
+  .popular-text {
+    margin: 25px auto;
+  }
+  .popular-img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  /* Destination section */
+  .destination {
+    margin: 20px;
+  }
+  .section-text {
+    width: 100%;
+  }
+  .grid-img {
+    display: block;
+  }
+  .section-title {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  /* Choose us section style */
+  .choose-us {
+    margin: 20px;
+  }
+
+  .choose-row {
+    margin: 0;
+  }
+  .single-card {
+    width: 80%;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+  .choose-row {
+    display: block;
+  }
+  .card-text {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .card-title {
+    margin-top: 10px;
+  }
+
+  /* News letter section style */
+  .news-letter {
+    margin: 20px;
+    margin-top: 50px;
+    display: block;
+  }
+  .subscribe-form {
+    width: 85%;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #ff5400;
+    margin-bottom: 20px;
+  }
+  .form-text {
+    width: 100%;
+  }
+  .subscribe-form input {
+    width: 100%;
+  }
+  .subscribe-form hr {
+    width: 100%;
+  }
+  .sub-btn {
+    width: 103%;
+  }
+  .disc-img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .disc-overlay {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 105px;
+    left: 115px;
+    transform: rotate(-19.628deg);
+  }
+  .disc-title {
+    font-size: 20px;
+  }
+  .disc-text {
+    font-size: 16px;
+  }
+  /* Footer section styles */
+  .footer-text {
+    width: 80%;
+  }
+  .footer-logo {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 }
